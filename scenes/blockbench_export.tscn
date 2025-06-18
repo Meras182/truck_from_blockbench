@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd0qprto6wthh"]
+
+[ext_resource type="PackedScene" uid="uid://bpsepgutwfhtr" path="res://assets/gltf/pickup_truck.gltf" id="1_tre2p"]
+
+[node name="blockbench_export" instance=ExtResource("1_tre2p")]

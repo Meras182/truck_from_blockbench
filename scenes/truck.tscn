@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv6r25fy0udf2"]
+
+[ext_resource type="PackedScene" uid="uid://dd0qprto6wthh" path="res://scenes/blockbench_export.tscn" id="1_8ivgs"]
+[ext_resource type="Script" uid="uid://wgq50sjsxyi4" path="res://scenes/truck.gd" id="1_w5yki"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8ivgs"]
+size = Vector3(1, 1, 2.46094)
+
+[node name="Truck" type="CharacterBody3D"]
+script = ExtResource("1_w5yki")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.00958, 0, 0, 0, 1.24129, 0, 0, 0, 0.921132, 0, 0.637997, -0.0283583)
+shape = SubResource("BoxShape3D_8ivgs")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.736915, -0.344475, 0.58163, 0.0230574, 0.872726, 0.487665, -0.675592, -0.345957, 0.651068, 1.75937, 2.01399, 1.89474)
+
+[node name="blockbench_export" parent="." instance=ExtResource("1_8ivgs")]
+transform = Transform3D(-0.999988, 0, -0.00483455, 0, 1, 0, 0.00483455, 0, -0.999988, 0, 0, 0)
+
+[editable path="blockbench_export"]

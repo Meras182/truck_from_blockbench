@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://bqcs1kvriqpng"]
+[gd_scene load_steps=3 format=3 uid="uid://bqcs1kvriqpng"]
+
+[ext_resource type="PackedScene" uid="uid://cv6r25fy0udf2" path="res://scenes/truck.tscn" id="1_o5qli"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0wfyh"]
 
 [node name="main" type="Node3D"]
+
+[node name="Truck" parent="." instance=ExtResource("1_o5qli")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20282, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(7.30464, 0, 0, 0, 1, 0, 0, 0, 6.04336, 0, 0, 0)
+mesh = SubResource("PlaneMesh_0wfyh")
