@@ -4,7 +4,7 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
-@onready var animation_player: AnimationPlayer = $blockbench_export/AnimationPlayer
+@onready var animation_player: AnimationPlayer = %AnimationPlayer
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
